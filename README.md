@@ -20,10 +20,10 @@ Files are loaded using "read.table" function with default parameters:
 
 Composition of resulting data frame is described by the table below:
 
-|Labels from features.txt | Activity          | "Subject"         |
+|Labels from features.txt | "Activity"          | "Subject"         |
 |-------------------------|-------------------|---------------------|
 |X_train.txt              | y_train.txt         | subject_train.txt |
-|-------------------------- y_test.txt          ---------------------
+|-------------------------| y_test.txt          |--------------------
 |X_test.txt               | activity_labels.txt | subject_test.txt  |
 |-------------------------|---------------------|-------------------|
 
