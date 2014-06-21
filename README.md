@@ -20,12 +20,12 @@ Files are loaded using "read.table" function with default parameters:
 
 Composition of resulting data frame is described by the table below:
 
-|Labels from features.txt | "Activity"          | "Subject"         |
-|-------------------------|-------------------|---------------------|
-|X_train.txt              | y_train.txt         | subject_train.txt |
-|-------------------------| y_test.txt          |--------------------
-|X_test.txt               | activity_labels.txt | subject_test.txt  |
+|Labels from features.txt | "Activity" | "Subject" |
 |-------------------------|---------------------|-------------------|
+|X_train.txt              | y_train.txt         | subject_train.txt |
+|X_test.txt               | y_test.txt  | subject_test.txt  |
+
+Activity codes in "Activity" column are then replaced by labels from activity_labels.txt file
 
 3. Getting mean and standard deviation columns
 ---
@@ -41,7 +41,6 @@ dataset frame is flattened using "melt.data.frame" function from "reshape" libra
  Subject | Activity | Variable | value |
 ---------|----------|----------|-------|
 Code of the experiment subject | Performing activity | Measure name (from features.txt) | Measure |
----------|----------|----------|-------|
 
 After that, tidy dataset is obtained by aggregating "values" with mean function and ordering by Subject/Activity/Variable columns.
 Result is saved in "tidy_dataset.txt" file
