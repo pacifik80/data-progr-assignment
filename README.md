@@ -30,8 +30,8 @@ Activity codes in "Activity" column are then replaced by labels from activity_la
 3. Getting mean and standard deviation columns
 ---
 
-req_columns variable explicitly defines columns that contain mean and std measures to simplify script readability
-dataset variable is created with only required columns and saved to "dataset.txt" file in current project directory
+req_columns variable explicitly defines columns that contain mean and std measures to simplify script readability.
+"dataset" variable is created with only required columns and saved to "dataset.txt" file in current project directory
 
 4. Preparing tidy data set
 ---
